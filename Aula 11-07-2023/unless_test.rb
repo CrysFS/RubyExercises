@@ -5,3 +5,5 @@ unless idade < 18
 else
     puts 'voce é menor de idade'
 end
+
+#mesma coisa que !if
