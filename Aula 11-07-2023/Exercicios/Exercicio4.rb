@@ -4,6 +4,8 @@
 
 time1 = Time.now
 
+#sem variavel seria: if time.now.hour > 12 .....
+
 if time1.hour < 12
   puts "Bom dia"
 elsif time1.hour > 12
