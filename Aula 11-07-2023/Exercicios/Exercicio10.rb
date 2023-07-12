@@ -2,6 +2,8 @@
 
 numero = 323
 
+#numero.even (detecta se o numero é par)
+
 if numero % 2 == 0 && numero > 0
     puts 'o numero é positivo e par'
 else 
