@@ -9,6 +9,7 @@ until contador > 5
         raise if contador == 3
         contador += 1
     rescue
+        numero = 1
         retry
     end
 end
