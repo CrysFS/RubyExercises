@@ -2,7 +2,7 @@
 # Este metodo para o loop
 
 for i in 1..5
-    puts in
+    puts i
     break if i == 3
 end
 
