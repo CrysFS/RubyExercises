@@ -17,7 +17,7 @@
 def jogo()
     tentativas = []
 
-    resposta_correta = rand(1..100)
+    resposta_correta = rand(1..1000)
 
     10.times do |i|
       print "Digite a tentativa #{i + 1}: "
