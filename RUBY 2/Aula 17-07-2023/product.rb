@@ -12,4 +12,9 @@ class Product
         puts "Preço: #{price}" if price
     end
 
+    def sale
+        @price = price * 0.5
+    end
+
 end
+
