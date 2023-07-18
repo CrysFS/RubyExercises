@@ -36,5 +36,10 @@ class Eletronic < Product
         puts "Aparelho ligado em modo segurança."
     end
 
+    def start_sale
+        super
+        puts "Produto de Valor alto, atenção."
+    end
+
 end
 

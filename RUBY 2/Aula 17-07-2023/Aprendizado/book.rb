@@ -25,7 +25,8 @@ class Book < Product
                 puts "abrindo o livro na pagina #{page}"
             end
         else
-            puts "abrndo o livro para ler"
+            puts "abrindo o livro para ler"
         end
     end
+
 end
