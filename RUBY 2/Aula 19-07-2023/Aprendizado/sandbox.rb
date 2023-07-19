@@ -1,26 +1,27 @@
+require './modules/addressable'
 require './modules/shipping'
 require './modules/payment'
+require './modules/validatable'
 require './classes/product'
+require './classes/costumer'
 require './classes/book'
 require './classes/electronic'
 
-book = Book.new(name: 'Livro Teste', price: 20)
-
-card = {
-  card_number: '4444444444444444',
-  card_cvv: '123',
-  card_holder: 'John Doe',
-  card_expiry: '2023-10-10'
+address = {
+  public_area: 'Dorival Bueno',
+  number: '110',
+  district: 'Morro do Ouro',
+  zipcode: '13840-000',
+  city: 'Mogi guaçu',
+  federal_state: 'SP'
 }
 
-bank_slip = {
-  name: 'John Appleseed',
-  document: '123.456.789-10',
-  email: 'john@appleseed.com'
-}
-
-book.pay({
-  method: 'bank_slip',
-  amount: 1,
-  options: bank_slip
+costumer = Costumer.new({
+  first_name: 'ohn',
+  last_name: 'oe',
+  document: '12312312323',
+  email: 'ad@fd.br',
+  address: address
 })
+
+costumer.show
