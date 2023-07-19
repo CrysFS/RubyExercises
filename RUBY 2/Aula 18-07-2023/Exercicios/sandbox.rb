@@ -11,3 +11,8 @@ calculator = Calculator.new
 # puts calculator.sum(5, 7) # 12
 # puts calculator.product(3, 4) # 12
 puts calculator.dollar_to_euro(23)
+puts calculator.euro_to_dollar(23)
+puts calculator.real_to_dollar(23)
+puts calculator.dollar_to_real(23)
+puts calculator.euro_to_real(23)
+puts calculator.real_to_euro(23)
