@@ -57,6 +57,6 @@ module Payable
   end
 
   def generate_invoice(amount)
-    { invoice: rand(5000..15000), amount: }
+    { invoice: rand(5000..15000), amount: amount }
   end
 end

@@ -22,7 +22,7 @@ customer = Customer.new({
   last_name: 'appleseed',
   document: '123.456.789-10',
   email: 'john@appleseed.com',
-  address:
+  address: address
 })
 
 card = {
@@ -35,7 +35,7 @@ card = {
 book  = Book.new({ name: 'Livro de Teste', price: 20, author: 'John Doe', pages: 50 })
 book2 = Book.new({ name: 'Livro de Teste 2', price: 50, author: 'Jane Doe', pages: 500 })
 
-cart = Cart.new({ customer:, payment_method: 'credit_card', card: })
+cart = Cart.new({ customer: customer, payment_method: 'credit_card', card: card })
 cart.add(book)
 cart.add(book2)
 

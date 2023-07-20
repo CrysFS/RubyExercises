@@ -45,7 +45,7 @@ class Cart
 
     invoice = pay({
       method: payment_method,
-      amount:,
+      amount: amount,
       options: payment_method == 'bank_slip' ? bank_slip_options : card
     })
 
