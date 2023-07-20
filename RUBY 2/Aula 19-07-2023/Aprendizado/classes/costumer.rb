@@ -22,6 +22,7 @@ include Addressable
         puts "Email: #{email}"
         puts "Documento: #{document}"
         puts "Cep: #{zipcode}"
+        puts "Endereço completo: #{full_address}"
     end
 
     private
