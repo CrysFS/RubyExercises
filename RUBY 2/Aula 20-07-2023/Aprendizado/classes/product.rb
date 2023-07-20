@@ -1,6 +1,6 @@
 class Product
-  include Shipping
-  include Payment
+  include Shippable
+  include Payable
 
   attr_accessor :name, :price, :on_sale, :original_price
 

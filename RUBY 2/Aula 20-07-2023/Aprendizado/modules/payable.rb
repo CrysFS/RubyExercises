@@ -1,4 +1,4 @@
-module Payment
+module Payable
   def pay(params = {})
     method  = params[:method]
     amount  = params[:amount]

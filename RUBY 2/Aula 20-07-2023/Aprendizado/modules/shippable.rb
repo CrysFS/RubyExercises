@@ -1,4 +1,4 @@
-module Shipping
+module Shippable
   SHIPPING_METER_COST = 0.0001
   QUANTITY_MULTIPLIER = 1.25
   SERVICE_TAX         = 1

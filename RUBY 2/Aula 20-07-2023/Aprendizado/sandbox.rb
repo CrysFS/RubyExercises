@@ -1,5 +1,5 @@
-require './modules/shipping'
-require './modules/payment'
+require './modules/shippable'
+require './modules/payable'
 require './modules/validatable'
 require './modules/addressable'
 require './classes/product'
