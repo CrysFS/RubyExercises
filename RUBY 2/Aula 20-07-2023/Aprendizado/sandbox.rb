@@ -6,6 +6,7 @@ require './classes/product'
 require './classes/book'
 require './classes/electronic'
 require './classes/customer'
+require './classes/cart'
 
 address = {
   public_area: 'Dorival Bueno',
@@ -24,4 +25,22 @@ customer = Customer.new({
   address:
 })
 
+card = {
+  number: '4444 4444 4444 4444',
+  cvv: '123',
+  holder: 'John Appleseed',
+  expiry: '2023-10-10'
+}
+
+book  = Book.new({ name: 'Livro de Teste', price: 20, author: 'John Doe', pages: 50 })
+book2 = Book.new({ name: 'Livro de Teste 2', price: 50, author: 'Jane Doe', pages: 500 })
+
+cart = Cart.new({ customer:, payment_method: 'credit_card', card: })
+cart.add(book)
+cart.add(book2)
+
+cart.checkout
+puts '---'
+cart.show
+puts '-----'
 customer.show

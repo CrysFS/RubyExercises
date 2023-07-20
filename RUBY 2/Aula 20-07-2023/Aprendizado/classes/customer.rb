@@ -2,7 +2,7 @@ class Customer
   include Validatable
   include Addressable
 
-  attr_accessor :first_name, :last_name, :email, :document, :address, :credit_card
+  attr_accessor :first_name, :last_name, :email, :document, :address, :credit_card, :invoices
 
   def initialize(attributes = {})
     @first_name   = attributes[:first_name]&.capitalize
@@ -11,9 +11,14 @@ class Customer
     @document     = attributes[:document]
     @address      = attributes[:address] || {}
     @credit_card  = attributes[:credit_card] || {}
+    @invoices     = []
 
     validate_attributes
     validate_address
+  end
+
+  def name
+    "#{first_name} #{last_name}"
   end
 
   def show
@@ -23,6 +28,19 @@ class Customer
     puts "Document: #{document}"
     puts "CEP #{zipcode}"
     puts "Endereço: #{full_address}"
+    puts '---'
+    puts 'Compras:'
+
+    invoices.each do |invoice|
+      puts '---'
+      puts "Código: #{invoice[:invoice]}"
+      puts "Valor: #{invoice[:amount]}"
+      puts '---'
+    end
+  end
+
+  def add_invoice(invoice)
+    @invoices.push(invoice)
   end
 
   private

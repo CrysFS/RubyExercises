@@ -7,12 +7,8 @@ module Shippable
     distance      = distance_between
     distance_cost = distance[:meters] * SHIPPING_METER_COST
     quantity_cost = quantity * QUANTITY_MULTIPLIER
-    total_cost    = distance_cost + quantity_cost + SERVICE_TAX
 
-    puts "A distância é: #{distance[:km]}km"
-    puts "O custo é: #{distance_cost}"
-    puts "O custo adicional por item é: #{quantity_cost}"
-    puts "O valor final é: #{total_cost}"
+    distance_cost + quantity_cost + SERVICE_TAX
   end
 
   private

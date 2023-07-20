@@ -1,7 +1,4 @@
 class Product
-  include Shippable
-  include Payable
-
   attr_accessor :name, :price, :on_sale, :original_price
 
   def initialize(attributes = {})

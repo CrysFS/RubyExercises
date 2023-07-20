@@ -1,4 +1,4 @@
-class Costumer
+class Custumer
     include Validatable
 include Addressable
 

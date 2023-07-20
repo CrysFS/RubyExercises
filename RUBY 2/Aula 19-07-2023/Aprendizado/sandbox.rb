@@ -3,7 +3,7 @@ require './modules/shipping'
 require './modules/payment'
 require './modules/validatable'
 require './classes/product'
-require './classes/costumer'
+require './classes/custumer'
 require './classes/book'
 require './classes/electronic'
 
@@ -16,7 +16,7 @@ address = {
   federal_state: 'SP'
 }
 
-costumer = Costumer.new({
+custumer = Custumer.new({
   first_name: 'ohn',
   last_name: 'oe',
   document: '12312312323',
@@ -24,4 +24,4 @@ costumer = Costumer.new({
   address: address
 })
 
-costumer.show
+custumer.show
