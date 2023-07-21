@@ -1,4 +1,4 @@
-require './modules/shippable'
+# require './modules/shippable'
 require './modules/payable'
 require './modules/validatable'
 require './modules/addressable'

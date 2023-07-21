@@ -31,16 +31,24 @@ class Customer
     puts '---'
     puts 'Compras:'
 
+    show_invoices
+
+  end
+
+  def add_invoice(invoice)
+    @invoices.push(invoice)
+  end
+
+  def show_invoices
+    puts '---'
+    puts 'Compras:'
+
     invoices.each do |invoice|
       puts '---'
       puts "Código: #{invoice[:invoice]}"
       puts "Valor: #{invoice[:amount]}"
       puts '---'
     end
-  end
-
-  def add_invoice(invoice)
-    @invoices.push(invoice)
   end
 
   private
