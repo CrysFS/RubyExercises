@@ -63,8 +63,8 @@ def visualize_numbers(agenda)
         puts "#{index + 1}. #{name}: #{number}"
       end
     end
-end
-
+  end
+  
 loop do
   option = menu
 
