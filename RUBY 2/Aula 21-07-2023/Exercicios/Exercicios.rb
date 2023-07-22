@@ -33,12 +33,12 @@ def add_number(agenda)
   name = gets.chomp
   print 'Digite o número de telefone: '
   number = gets.chomp
-  agenda[name] = number
+  agenda[name.downcase] = number
   puts 'Número adicionado com sucesso!'
 end
 
 def remove_number(agenda, name)
-  if agenda.delete(name)
+  if agenda.delete(name.downcase)
     puts 'Número removido com sucesso!'
   else
     puts 'Contato não encontrado na agenda.'
@@ -60,7 +60,7 @@ def visualize_numbers(agenda)
     else
       puts "\nContatos na agenda:"
       agenda.each_with_index do |(name, number), index|
-        puts "#{index + 1}. #{name}: #{number}"
+        puts "#{index + 1}. #{name.capitalize}: #{number}"
       end
     end
   end
