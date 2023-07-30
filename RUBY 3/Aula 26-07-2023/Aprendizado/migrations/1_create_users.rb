@@ -31,3 +31,4 @@ end
 
 # esse vai mudar no banco:
 #  users.where(age: 15..20).order_append(Sequel.desc(:age)).all
+
